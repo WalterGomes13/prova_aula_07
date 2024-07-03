@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header>
+    <h1>Calculadora de Gorjeta</h1>
+  </header>
+  <main>
+    <div id="labels">
+        <label for="valor">Valor da conta: </label>
+        <input type="number" name="" id="valor">
+    </div>
+    <div id="buttons">
+      <h3>Avalie o serviço</h3>
+      <button id="Bom" onclick="valorTotal(document.querySelector('#valor').value, (document.querySelector('#valor').value*0.1),escrever)">Bom</button>
+      <button id="Regular" onclick="valorTotal(document.querySelector('#valor').value, (document.querySelector('#valor').value*0.05),escrever)">Regular</button>
+      <button id="Ruim" onclick="valorTotal(document.querySelector('#valor').value, 0,escrever)">Ruim</button>
+    </div>
+    <span id="resultado"></span>
+  </main>
+  
+  <script src="script.js"></script>
+</body>
+
+</html>
